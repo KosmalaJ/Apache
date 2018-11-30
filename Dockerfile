@@ -3,4 +3,4 @@ RUN apt-get update -y
 RUN apt-get install apache2 -y
 EXPOSE 80
 RUN echo "witam"
-CMD service apache2 start
+CMD apachectl -DFOREGROUND
